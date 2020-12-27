@@ -19,6 +19,7 @@
 		79132EDC259817BB00D5D0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79132EDA259817BB00D5D0AE /* LaunchScreen.storyboard */; };
 		79132EE7259817BB00D5D0AE /* MessageBubbleViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79132EE6259817BB00D5D0AE /* MessageBubbleViewExampleTests.swift */; };
 		79132EF2259817BB00D5D0AE /* MessageBubbleViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79132EF1259817BB00D5D0AE /* MessageBubbleViewExampleUITests.swift */; };
+		79132F0325981A5600D5D0AE /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79132F0225981A5600D5D0AE /* MessageBubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		79132EED259817BB00D5D0AE /* MessageBubbleViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageBubbleViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79132EF1259817BB00D5D0AE /* MessageBubbleViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleViewExampleUITests.swift; sourceTree = "<group>"; };
 		79132EF3259817BB00D5D0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79132F0225981A5600D5D0AE /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				79132EAD2598168600D5D0AE /* MessageBubbleView.h */,
 				79132EAE2598168600D5D0AE /* Info.plist */,
+				79132F0225981A5600D5D0AE /* MessageBubbleView.swift */,
 			);
 			path = MessageBubbleView;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				TargetAttributes = {
 					79132EA92598168600D5D0AE = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					79132EB22598168600D5D0AE = {
 						CreatedOnToolsVersion = 12.3;
@@ -383,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79132F0325981A5600D5D0AE /* MessageBubbleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +591,7 @@
 		79132EBF2598168600D5D0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
@@ -602,6 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.MessageBubbleView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -610,6 +617,7 @@
 		79132EC02598168600D5D0AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
@@ -634,6 +642,7 @@
 		79132EC22598168600D5D0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				INFOPLIST_FILE = MessageBubbleViewTests/Info.plist;
@@ -652,6 +661,7 @@
 		79132EC32598168600D5D0AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P55BHT8RZT;
 				INFOPLIST_FILE = MessageBubbleViewTests/Info.plist;
